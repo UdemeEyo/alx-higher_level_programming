@@ -1,11 +1,8 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
+remove_char_at = __import__('101-remove_char_at').remove_char_at
 
-newstr = ""
-count = 1
-for c in range(ord('z'), ord('a') - 1, -1):
-    if (count % 2 == 0):
-        newstr += chr(c - 32)
-    else:
-        newstr += chr(c)
-    count += 1
-print("{}".format(newstr), end="")
+print(remove_char_at("Best School", 3))
+print(remove_char_at("Chicago", 2))
+print(remove_char_at("C is fun!", 0))
+print(remove_char_at("School", 10))
+print(remove_char_at("Python", -2))
